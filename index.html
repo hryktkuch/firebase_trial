@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あれ？昨日何食べたっけ？</title>
+</head>
+<body>
+    <center>
+        <button id="record_function">記録</button>
+        <button id="quiz_function">クイズ</button>
+    </center>
+
+    <div id="record_display" style="display:none; text-align:center"> 
+        <h2>食事の写真をアップロード</h2>
+        <input id="upload" type="file" accept=".png,.jpg,.jpeg"><br>
+        
+        <img id="preview">
+        <button id="save">アップロード</button><br>
+        <p id="result"></p>
+    </div>
+    <!-- <button id="load">load</button><br> -->
+
+    <div id="quiz_display" style="display:none; text-align:center">
+        <h2>クイズ</h2>
+        <button id="start">出題</button><br>
+        <img id="quiz"></img><br>
+        <!--<p id="date">a</p>-->
+        <button id="button0">選択肢0</button>
+        <button id="button1">選択肢1</button>
+        <button id="button2">選択肢2</button>
+        <p id="seigo">正解／不正解はここに表示</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
